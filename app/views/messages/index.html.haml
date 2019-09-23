@@ -1,0 +1,16 @@
+- if user_signed_in?
+  = render 'messages/header'
+  .message-main
+    = render 'messages/side'
+    .messages
+      = render @messages
+  = render 'messages/footer'
+- else
+  .top-page
+    %h1 Original story
+    .top-page__text
+      / ユーザーがログインしていなかった時の処理
+      = link_to " Log_in", new_user_session_path, class: 'post'
+      / ログイン画面に移行する
+      = link_to "Sign_up", new_user_registration_path, class: 'post'
+      / 新規登録画面に移行する

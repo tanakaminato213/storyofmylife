@@ -1,0 +1,10 @@
+.message-header
+  .header-text
+    .header-text__group
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group),class:"link_group" do
+          .header-text__group__box
+            .header-text__group__box__name
+              Group name
+            .header-text__group__box__nm
+              = group.name
