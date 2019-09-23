@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a:link{
+  color: black;
+}
+a:visited{
+  color: black;
+}
+.message-side{
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;  
+  right: 0; 
+  background-color: rgba(255, 255, 255, 0.856);
+  float: right;
+  word-wrap: break-word;
+  z-index:3;
+  a:visited{
+    color: black;
+  }
+  .side-text{
+    z-index:3;
+    margin-top: 50px;
+    color: black;
+    height: 100vh;
+    padding: 0 30px;
+    white-space: nowrap;
+    margin-top:150px;
+    h2:visited{
+      color: black;
+    }
+    text-shadow:
+    0 0 2px rgba(204, 208, 212,0.9),
+    0 15px 25px rgba(0, 0, 0, 0.3),
+    0 -2px 3px rgba(0, 0, 0, 0.1),
+    0 -5px 10px rgba(255, 255, 255, 0.5),
+    0 5px 10px rgba(0, 0, 0, 0.3),
+    0 3px 4px rgba(255, 255, 255, 0.2),
+    0 0 20px #ffffff73;
+    &__name{
+      color: black;
+      font-size: 30px;
+      word-wrap:break-word;
+      h2:visited{
+        color: white;
+      }
+      text-shadow:
+      0 0 2px rgba(204, 208, 212,0.9),
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 -2px 3px rgba(0, 0, 0, 0.1),
+      0 -5px 10px rgba(255, 255, 255, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3),
+      0 3px 4px rgba(255, 255, 255, 0.2),
+      0 0 20px #ffffff73;
+    }
+    &__new{
+      margin-top: 50px;
+      color: black;
+      font-size: 30px;
+      text-shadow:
+      0 0 2px rgba(204, 208, 212,0.9),
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 -2px 3px rgba(0, 0, 0, 0.1),
+      0 -5px 10px rgba(255, 255, 255, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3),
+      0 3px 4px rgba(255, 255, 255, 0.2),
+      0 0 20px #ffffff73;
+      a:hover{
+        color:blue;
+      }
+    }
+    &__user{
+      margin-top: 50px;
+      color: black;
+      font-size: 30px;
+      text-shadow:
+      0 0 2px rgba(204, 208, 212,0.9),
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 -2px 3px rgba(0, 0, 0, 0.1),
+      0 -5px 10px rgba(255, 255, 255, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3),
+      0 3px 4px rgba(255, 255, 255, 0.2),
+      0 0 20px #ffffff73;
+      a:hover{
+        color:red;
+      }
+    }
+    &__edit{
+      margin-top: 50px;
+      color: white;
+      font-size: 30px;
+      text-shadow:
+      0 0 2px rgba(204, 208, 212,0.9),
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 -2px 3px rgba(0, 0, 0, 0.1),
+      0 -5px 10px rgba(255, 255, 255, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3),
+      0 3px 4px rgba(255, 255, 255, 0.2),
+      0 0 20px #ffffff73;
+      a:hover{
+        color:yellow;
+      }
+    }
+    &__out{
+      margin-top: 50px;
+      color: black;
+      font-size: 30px;
+      text-shadow:
+      0 0 2px rgba(204, 208, 212,0.9),
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 -2px 3px rgba(0, 0, 0, 0.1),
+      0 -5px 10px rgba(255, 255, 255, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3),
+      0 3px 4px rgba(255, 255, 255, 0.2),
+      0 0 20px #ffffff73;
+      a:hover{
+        color:green;
+      }
+    }
+  }
+}

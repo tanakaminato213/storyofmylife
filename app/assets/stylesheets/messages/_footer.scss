@@ -1,0 +1,78 @@
+.form {
+  background-color: rgba(255, 255, 255, 0.856);
+  bottom: 0;
+  box-sizing: border-box;
+  width: calc(100vw - 200px);
+  padding: 20px 50px 20px 40px;
+  border-top: 10px; 
+  height:100px;
+  position: fixed;
+  label > input {
+    display:none;
+    margin-left: 30px;
+    }
+    label {
+    font-size: 11px;
+    margin-left: 5px;
+    color: black;
+    color: #FF8C00;
+    background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    label:before{
+      content: "画像選択"
+    }
+  &__message {
+    padding: 0 40px 0 10px;
+    border: none;
+    float: left;
+    height: 50px;
+    width: calc(100% - 150px);
+    display: table;
+}
+  &__submit {
+    color: #FF8C00;
+    background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float:left;
+    border: none;
+    width: 100px;
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  &__submit:hover{
+    color: #FF8C00;
+    background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -ms-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    @-webkit-keyframes spin {
+      0% {-webkit-transform: rotate(0deg);}
+      100% {-webkit-transform: rotate(360deg);}
+    }
+    @-moz-keyframes spin {
+      0% {-moz-transform: rotate(0deg);}
+      100% {-moz-transform: rotate(360deg);}
+    }
+    @-ms-keyframes spin {
+      0% {-ms-transform: rotate(0deg);}
+      100% {-ms-transform: rotate(360deg);}
+    }
+    @-o-keyframes spin {
+      0% {-o-transform: rotate(0deg);}
+      100% {-o-transform: rotate(360deg);}
+    }
+    @keyframes spin {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+}
+  }

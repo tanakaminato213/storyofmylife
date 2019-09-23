@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+.message-main{
+  background-image: image-url("talk.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  float: left;
+  width: 100%;
+  z-index: 1;
+
+  .messages{
+      width: 1240px;
+      height: calc(100vh - 100px);
+      position: relative;
+      top:100px;
+      padding: 30px 40px;
+      overflow: scroll;
+      
+  }
+}
+.message-main:before{
+  background: inherit;
+  content: '';
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+}

@@ -1,0 +1,41 @@
+.message-header{
+  background-color: rgba(255, 255, 255, 0.856);
+  width: 100vw;
+  height:100px;
+  white-space:nowrap;
+  overflow-x: scroll;
+  position: fixed;
+  position: absolute;
+  z-index: 2;
+  a:visited{
+    color: black;
+  }
+  div:hover{
+    color: #FF8C00;
+    background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header-text{
+    color: black;
+    white-space: nowrap;
+    text-align: center;
+&__group{
+  width:auto;
+  color: black;
+  padding: 30px,0;
+  display:table;
+  
+  &__box{
+    display: table-cell;
+    padding-left: 30px;
+  &__name{
+    font-size: 25px;
+      }
+  &__nm{
+    font-size: 40px;
+  }
+  }
+    }
+  }
+}

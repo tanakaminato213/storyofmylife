@@ -1,0 +1,82 @@
+.log-main{
+  background-image: image-url("door.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  &__box{
+    text-align: center;
+    animation: anime1 3s ease;
+    @keyframes anime1 {
+      0% {
+          opacity:  0;
+          top: 50px;
+      }
+      100% {
+          opacity:  1;
+          top: 0;
+      }
+  }
+    h2{
+      font-size: 40px;
+      color: black;
+      font-family: cursive;
+      text-shadow:
+      0 0 2px rgba(204, 208, 212,0.9),
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 -2px 3px rgba(0, 0, 0, 0.1),
+      0 -5px 10px rgba(255, 255, 255, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3),
+      0 3px 4px rgba(255, 255, 255, 0.2),
+      0 0 20px #ffffff73;
+    }
+    &__field{
+      margin-top: 30px;
+      label{
+        font-size: 60px;
+        color: black;
+        font-family: cursive;      text-shadow:
+        0 0 2px rgba(204, 208, 212,0.9),
+        0 15px 25px rgba(0, 0, 0, 0.3),
+        0 -2px 3px rgba(0, 0, 0, 0.1),
+        0 -5px 10px rgba(255, 255, 255, 0.5),
+        0 5px 10px rgba(0, 0, 0, 0.3),
+        0 3px 4px rgba(255, 255, 255, 0.2),
+        0 0 20px #ffffff73;
+      }
+    }
+  }
+  &__actions{
+    input{
+      margin-top: 30px;
+      display: inline-block;
+      width: 180px;
+      text-align: center;
+      font-size: 16px;
+      color: #FFF;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 4px;
+      background-image: linear-gradient(-30deg, rgb(17, 6, 2), rgb(1, 7, 19));
+      transition: .5s;
+      background-size: 200%;
+    
+    .btn-gradation:hover {
+      background-position: right center;
+      }
+    }
+  }
+    a{
+      font-size: 40px;
+      color: black;
+      font-family: cursive;      text-shadow:
+      0 0 2px rgba(204, 208, 212,0.9),
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 -2px 3px rgba(0, 0, 0, 0.1),
+      0 -5px 10px rgba(255, 255, 255, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3),
+      0 3px 4px rgba(255, 255, 255, 0.2),
+      0 0 20px #ffffff73;
+    }
+}

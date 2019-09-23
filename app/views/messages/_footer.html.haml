@@ -1,0 +1,7 @@
+.form
+  = form_with model: [@group,@message], id: "new_message",local: true do |f|
+    = f.text_field :text, class: 'form__message', placeholder: 'メッセージを入力してください'
+    .form__mask
+      = f.label :image, class: 'form__mask__image' do
+        = f.file_field :image, class: 'hidden'
+    = f.submit '送信', class: 'form__submit'
