@@ -1,23 +1,18 @@
 require 'carrierwave/storage/abstract'
 require 'carrierwave/storage/file'
 require 'carrierwave/storage/fog'
- 
-CarrierWave.configure do |config|
-  if Rails.env.production?
-    config.storage :fog
+
+if Rails.env.production?
+  CarrierWave.configure do |config|
     config.fog_provider = 'fog/aws'
-    config.fog_directory  = 'tanakaminato0213'
     config.fog_credentials = {
       provider: 'AWS',
       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
-      region: 'ap-northeast-1' ,
-      path_style: true
+      region: 'ap-northeast-1'  # S3バケット作成時に指定したリージョン。左記は東京を指す
     }
-  else
-    config.storage :file
-    config.enable_processing = false if Rails.env.test?
+    config.fog_directory  = ENV['S3_BUCKET'] # 作成したS3バケット名
   end
+  # 日本語ファイル名の設定
+  CarrierWave::SanitizedFile.sanitize_regexp = /[^[:word:]\.\-\+]/ 
 end
- 
-CarrierWave::SanitizedFile.sanitize_regexp = /[^[:word:]\.\-\+]/
