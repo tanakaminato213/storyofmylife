@@ -11,10 +11,8 @@ CarrierWave.configure do |config|
     aws_secret_access_key: ENV['SECRET_ACCESS_KEY'],
     region: 'ap-northeast-1'
   }
-  config.fog_directory  = ENV['S3_BUCKET'] # 作成したS3バケット名
+  config.fog_directory  = ENV['S3_BUCKET']
 end
-# 日本語ファイル名の設定
-CarrierWave::SanitizedFile.sanitize_regexp = /[^[:word:]\.\-\+]/ 
 
     case Rails.env
     when 'production'
