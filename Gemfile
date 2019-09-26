@@ -68,10 +68,12 @@ gem 'devise'
 gem 'haml-rails'
 gem "erb2haml"
 gem 'carrierwave'
+gem 'carrierwave-aws'
 gem 'mini_magick'
 gem 'pry-rails'
 gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'fog-aws'
 gem 'fog'
+gem "aws-sdk"
 
