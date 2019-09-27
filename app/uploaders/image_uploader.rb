@@ -4,6 +4,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
+  include CarrierWave::MiniMagick
   process resize_to_fit: [400, 400]
   
   if Rails.env.production?
@@ -53,3 +54,4 @@ class ImageUploader < CarrierWave::Uploader::Base
      super.chomp(File.extname(super)) + '.jpg' if original_filename.present?
   end
 end
+
