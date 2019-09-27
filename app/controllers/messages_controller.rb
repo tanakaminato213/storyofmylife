@@ -9,6 +9,7 @@ class MessagesController < ApplicationController
   def create
     # インスタンス変数を定義したら、doneに送られる。
       @message = @group.messages.new(message_params)
+      Message.create(image: message_params[:image], user_id: current_user.id)
       if @message.save
         respond_to do |format|
           format.html{ redirect_to group_messages_path(params[:group_id]) }
